@@ -6,7 +6,7 @@ $dbpassword = "aion";
 
 //Game & Login Server
 $gs = "al_server_gs";
-$ls = "al_server_ls";
+$ls = "aion_49";
 $server = "127.0.0.1";
 $portgame = "7777";
 $portlogin = "2106";

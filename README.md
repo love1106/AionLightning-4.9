@@ -1,13 +1,38 @@
 # Aion Lightning 4.9 Full and Free Source / Tools + Utils
+# SETUP
+1. install msql
+docker run -d -p 3306:3306 --name=mysql -e  MYSQL_ROOT_PASSWORD=password mysql/mysql-server:5.7
 
-![alt tag] (http://mmo-warzone.bplaced.net/images/github/al49.png)
+2. setup root account
+docker exec -it mysql mysql -uroot -p
+ALTER USER 'root'@'%' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
 
+3. install aion_49 database
+CREATE DATABASE aion_49
 
-Open Source Reborn! Ihr braucht nicht warten bis Euch Leute in ihr Team lassen, die aus einem öffentlichen Source Code ein Staatsgeheimnis machen. Aion Lightning ist und war Open Source und wird es nun auch wieder sein. Sollte diese Projektseite nicht mehr verfügbar sein, der Code ist auf sehr vielen Plattformen hinterlegt.
+4. run upgrade scripts AL-Game
+- AL-Game\sql\migration\al_server_gs.sql
+- AL-Game\sql\migration\updates.sql
+- AL-Game\sql\migration\custom_ingameshop.sql
 
-Wenn Du lust hast an der Entwicklung des Servers, dessen Code und Datenbank mitzuwirken, dann melde Dich im Forum von http://mmo-warzone.de und werde ein Teil unseres Teams.
+5. run upgrade scrips AL-Login
+- AL-Login\sql\al_server_ls.sql
 
-![alt tag] (http://mmo-warzone.bplaced.net/images/github/ely1.png)
+6. build. Run
+- build_chatserver.bat
+- build_gameserver.bat
+- build_loginserver.bat
 
+7. Start Server.
+- Replace database.password with your password. then run
+- AL-Chat\build\dist\AL-Chat\StartCS.bat
+- AL-Game\build\dist\AL-Game\StartGS_8G.bat
+- AL-Login\build\dist\AL-Login\StartLS.bat
+
+# HINT
+- Set rate: AL-Game\config\main\rates.properties
 
 # TODO
+
