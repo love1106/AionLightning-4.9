@@ -1,189 +1,216 @@
-SET @player_id = 306994;
--- stigma="true"[^>]*classId="SORCERER"
+SET @player_id = 309844;
+-- stigma="true"[^>]*classId="SPIRIT_MASTER"
 --FINISHED
 
--- Arcane Thunderbolt
+-- Emnity Swap
 INSERT INTO player_skills (player_id, skill_id, skill_level)
-SELECT @player_id, 1215, 6
+SELECT @player_id, 3739, 6
 FROM DUAL
 WHERE NOT EXISTS (
     SELECT 1 FROM player_skills 
-    WHERE player_id = @player_id AND skill_id = 1215
-);
-
--- Absolute Zero
-INSERT INTO player_skills (player_id, skill_id, skill_level)
-SELECT @player_id, 1216, 6
-FROM DUAL
-WHERE NOT EXISTS (
-    SELECT 1 FROM player_skills 
-    WHERE player_id = @player_id AND skill_id = 1216
-);
-
--- Wintry Armor
-INSERT INTO player_skills (player_id, skill_id, skill_level)
-SELECT @player_id, 1307, 6
-FROM DUAL
-WHERE NOT EXISTS (
-    SELECT 1 FROM player_skills 
-    WHERE player_id = @player_id AND skill_id = 1307
-);
-
--- Ice Sheet Elyos
-INSERT INTO player_skills (player_id, skill_id, skill_level)
-SELECT @player_id, 1315, 6
-FROM DUAL
-WHERE NOT EXISTS (
-    SELECT 1 FROM player_skills 
-    WHERE player_id = @player_id AND skill_id = 1315
-);
-
--- Glacial Shard
-INSERT INTO player_skills (player_id, skill_id, skill_level)
-SELECT @player_id, 1326, 6
-FROM DUAL
-WHERE NOT EXISTS (
-    SELECT 1 FROM player_skills 
-    WHERE player_id = @player_id AND skill_id = 1315
+    WHERE player_id = @player_id AND skill_id = 3739
 );
 
 
--- Exchange Vitality
+-- Earthen Call
 INSERT INTO player_skills (player_id, skill_id, skill_level)
-SELECT @player_id, 1327, 6
+SELECT @player_id, 3569, 6
 FROM DUAL
 WHERE NOT EXISTS (
     SELECT 1 FROM player_skills 
-    WHERE player_id = @player_id AND skill_id = 1327
-);
-
-
--- Curse of Weakness
-INSERT INTO player_skills (player_id, skill_id, skill_level)
-SELECT @player_id, 1336, 6
-FROM DUAL
-WHERE NOT EXISTS (
-    SELECT 1 FROM player_skills 
-    WHERE player_id = @player_id AND skill_id = 1336
+    WHERE player_id = @player_id AND skill_id = 3569
 );
 
 
 
--- Sleeping Storm
+-- Magic's Freedom
 INSERT INTO player_skills (player_id, skill_id, skill_level)
-SELECT @player_id, 1339, 6
+SELECT @player_id, 3731, 6
 FROM DUAL
 WHERE NOT EXISTS (
     SELECT 1 FROM player_skills 
-    WHERE player_id = @player_id AND skill_id = 1339
-);
-
-
-
--- Boon of Quickness
-INSERT INTO player_skills (player_id, skill_id, skill_level)
-SELECT @player_id, 1350, 6
-FROM DUAL
-WHERE NOT EXISTS (
-    SELECT 1 FROM player_skills 
-    WHERE player_id = @player_id AND skill_id = 1350
-);
-
-
--- Summon Rock
-INSERT INTO player_skills (player_id, skill_id, skill_level)
-SELECT @player_id, 1356, 6
-FROM DUAL
-WHERE NOT EXISTS (
-    SELECT 1 FROM player_skills 
-    WHERE player_id = @player_id AND skill_id = 1356
-);
-
-
--- Ice Harpoon
-INSERT INTO player_skills (player_id, skill_id, skill_level)
-SELECT @player_id, 1383, 6
-FROM DUAL
-WHERE NOT EXISTS (
-    SELECT 1 FROM player_skills 
-    WHERE player_id = @player_id AND skill_id = 1383
-);
-
-
-
--- Elemental Ward
-INSERT INTO player_skills (player_id, skill_id, skill_level)
-SELECT @player_id, 1402, 6
-FROM DUAL
-WHERE NOT EXISTS (
-    SELECT 1 FROM player_skills 
-    WHERE player_id = @player_id AND skill_id = 1402
-);
-
-
-
--- Manifest Tornado
-INSERT INTO player_skills (player_id, skill_id, skill_level)
-SELECT @player_id, 1473, 6
-FROM DUAL
-WHERE NOT EXISTS (
-    SELECT 1 FROM player_skills 
-    WHERE player_id = @player_id AND skill_id = 1473
+    WHERE player_id = @player_id AND skill_id = 3731
 );
 
 
 
 
--- Storm Strike
+
+-- Stone Scour
 INSERT INTO player_skills (player_id, skill_id, skill_level)
-SELECT @player_id, 1493, 6
+SELECT @player_id, 3772, 6
 FROM DUAL
 WHERE NOT EXISTS (
     SELECT 1 FROM player_skills 
-    WHERE player_id = @player_id AND skill_id = 1493
-);
-
-
-
--- Flame Spray
-INSERT INTO player_skills (player_id, skill_id, skill_level)
-SELECT @player_id, 1525, 6
-FROM DUAL
-WHERE NOT EXISTS (
-    SELECT 1 FROM player_skills 
-    WHERE player_id = @player_id AND skill_id = 1525
-);
-
-
-
--- Illusion Storm
-INSERT INTO player_skills (player_id, skill_id, skill_level)
-SELECT @player_id, 1555, 6
-FROM DUAL
-WHERE NOT EXISTS (
-    SELECT 1 FROM player_skills 
-    WHERE player_id = @player_id AND skill_id = 1555
-);
-
-
-
--- Wind Cut Down
-INSERT INTO player_skills (player_id, skill_id, skill_level)
-SELECT @player_id, 4602, 6
-FROM DUAL
-WHERE NOT EXISTS (
-    SELECT 1 FROM player_skills 
-    WHERE player_id = @player_id AND skill_id = 4602
+    WHERE player_id = @player_id AND skill_id = 3772
 );
 
 
 
 
--- Arcane Thunderbolt
+
+
+-- Spirit Burn-to-Ashes
 INSERT INTO player_skills (player_id, skill_id, skill_level)
-SELECT @player_id, 4604, 6
+SELECT @player_id, 3836, 6
 FROM DUAL
 WHERE NOT EXISTS (
     SELECT 1 FROM player_skills 
-    WHERE player_id = @player_id AND skill_id = 4604
+    WHERE player_id = @player_id AND skill_id = 3836
+);
+
+
+
+
+
+-- Cyclone of Wrath
+INSERT INTO player_skills (player_id, skill_id, skill_level)
+SELECT @player_id, 3847, 6
+FROM DUAL
+WHERE NOT EXISTS (
+    SELECT 1 FROM player_skills 
+    WHERE player_id = @player_id AND skill_id = 3847
+);
+
+
+
+
+-- Withering Gloom
+INSERT INTO player_skills (player_id, skill_id, skill_level)
+SELECT @player_id, 3581, 6
+FROM DUAL
+WHERE NOT EXISTS (
+    SELECT 1 FROM player_skills 
+    WHERE player_id = @player_id AND skill_id = 3581
+);
+
+
+
+
+-- Spirit Wall of Protection
+INSERT INTO player_skills (player_id, skill_id, skill_level)
+SELECT @player_id, 3531, 6
+FROM DUAL
+WHERE NOT EXISTS (
+    SELECT 1 FROM player_skills 
+    WHERE player_id = @player_id AND skill_id = 3531
+);
+
+
+
+
+
+
+
+-- Cloaking Word
+INSERT INTO player_skills (player_id, skill_id, skill_level)
+SELECT @player_id, 3544, 6
+FROM DUAL
+WHERE NOT EXISTS (
+    SELECT 1 FROM player_skills 
+    WHERE player_id = @player_id AND skill_id = 3544
+);
+
+
+
+
+-- Shackle of Vulnerability
+INSERT INTO player_skills (player_id, skill_id, skill_level)
+SELECT @player_id, 3574, 6
+FROM DUAL
+WHERE NOT EXISTS (
+    SELECT 1 FROM player_skills 
+    WHERE player_id = @player_id AND skill_id = 3574
+);
+
+
+
+
+
+
+-- Magic Implosion
+INSERT INTO player_skills (player_id, skill_id, skill_level)
+SELECT @player_id, 3555, 6
+FROM DUAL
+WHERE NOT EXISTS (
+    SELECT 1 FROM player_skills 
+    WHERE player_id = @player_id AND skill_id = 3555
+);
+
+
+
+
+
+
+-- Infernal Pain
+INSERT INTO player_skills (player_id, skill_id, skill_level)
+SELECT @player_id, 3561, 6
+FROM DUAL
+WHERE NOT EXISTS (
+    SELECT 1 FROM player_skills 
+    WHERE player_id = @player_id AND skill_id = 3561
+);
+
+
+
+
+-- Spirit Ruinous Offensive
+INSERT INTO player_skills (player_id, skill_id, skill_level)
+SELECT @player_id, 3548, 6
+FROM DUAL
+WHERE NOT EXISTS (
+    SELECT 1 FROM player_skills 
+    WHERE player_id = @player_id AND skill_id = 3548
+);
+
+
+
+
+
+
+-- Summon Cyclone Servant Elyos
+INSERT INTO player_skills (player_id, skill_id, skill_level)
+SELECT @player_id, 3807, 6
+FROM DUAL
+WHERE NOT EXISTS (
+    SELECT 1 FROM player_skills 
+    WHERE player_id = @player_id AND skill_id = 3807
+);
+
+
+
+-- Healing Spirit
+INSERT INTO player_skills (player_id, skill_id, skill_level)
+SELECT @player_id, 3590, 6
+FROM DUAL
+WHERE NOT EXISTS (
+    SELECT 1 FROM player_skills 
+    WHERE player_id = @player_id AND skill_id = 3590
+);
+
+
+
+
+-- Infernal Blight
+INSERT INTO player_skills (player_id, skill_id, skill_level)
+SELECT @player_id, 3547, 6
+FROM DUAL
+WHERE NOT EXISTS (
+    SELECT 1 FROM player_skills 
+    WHERE player_id = @player_id AND skill_id = 3547
+);
+
+
+
+
+
+
+
+-- Armor Spirit
+INSERT INTO player_skills (player_id, skill_id, skill_level)
+SELECT @player_id, 3796, 6
+FROM DUAL
+WHERE NOT EXISTS (
+    SELECT 1 FROM player_skills 
+    WHERE player_id = @player_id AND skill_id = 3796
 );
